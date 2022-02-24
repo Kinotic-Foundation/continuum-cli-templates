@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "groovyVersion": "3.0.6",
+    "springBootVersion": "2.6.3",
+    "springDependencyManagementVersion": "1.0.11.RELEASE",
+    "continuumVersion": "1.0-SNAPSHOT"
+  },
+  "propertySchema":{
+    "projectName": {
+      "type": "string",
+      "description": "Project Name"
+    },
+    "groupId": {
+      "type": "string",
+      "description": "Maven Group Id"
+    },
+    "javaVersion": {
+      "type": "string",
+      "enum": ["8", "11", "17"],
+      "default": "17",
+      "description": "Java source compatibility version"
+    }
+  }
+}

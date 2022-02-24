@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '{{springBootVersion}}'
+	id 'io.spring.dependency-management' version '{{springDependencyManagementVersion}}'
+	id 'groovy'
+}
+
+group = '{{groupId}}'
+version = '0.1.0-SNAPSHOT'
+sourceCompatibility = '{{javaVersion}}'
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('groovy.version', "{{groovyVersion}}")
+	continuumVersion="{{continuumVersion}}"
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.codehaus.groovy:groovy'
+
+	implementation "com.kinotic:continuum-core:${continuumVersion}"
+	implementation "com.kinotic:continuum-core-vertx:${continuumVersion}"
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

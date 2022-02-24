@@ -1,0 +1,17 @@
+{
+  "propertySchema":{
+    "applicationName": {
+      "type": "string",
+      "description": "Application Name"
+    },
+    "artifactId": {
+      "type": "string",
+      "description": "Maven Artifact Id"
+    },
+    "basePackage": {
+      "type": "string",
+      "description": "Base java package for application",
+      "default": "{{groupId}}.{{artifactId}}"
+    }
+  }
+}

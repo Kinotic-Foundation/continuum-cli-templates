@@ -1,0 +1,9 @@
+{
+  "inherits": "../applicationCommon",
+  "propertySchema":{
+    "groupId": {
+      "type": "string",
+      "description": "Maven Group Id"
+    }
+  }
+}
