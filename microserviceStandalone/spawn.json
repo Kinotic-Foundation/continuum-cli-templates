@@ -1,5 +1,5 @@
 {
-  "inherits": "../applicationCommon",
+  "inherits": "../microserviceCommon",
   "globals": {
     "groovyVersion": "3.0.6",
     "springBootVersion": "2.6.3",

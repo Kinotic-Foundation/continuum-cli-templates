@@ -1,15 +1,17 @@
 package {{basePackage}}
 
 import com.kinotic.continuum.api.annotations.EnableContinuum
+import com.kinotic.continuum.api.annotations.EnableContinuumGateway
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
 @EnableContinuum
-class {{applicationName}}Application {
+@EnableGateway
+class {{name}}Application {
 
 	static void main(String[] args) {
-		SpringApplication.run({{applicationName}}Application, args)
+		SpringApplication.run({{name}}Application, args)
 	}
 
 }

@@ -1,5 +1,5 @@
 {
-  "inherits": "../applicationCommon",
+  "inherits": "../microserviceCommon",
   "propertySchema":{
     "groupId": {
       "type": "string",
