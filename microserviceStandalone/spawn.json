@@ -2,7 +2,7 @@
   "inherits": "../microserviceCommon",
   "globals": {
     "groovyVersion": "3.0.6",
-    "springBootVersion": "2.6.3",
+    "springBootVersion": "2.6.6",
     "springDependencyManagementVersion": "1.0.11.RELEASE",
     "continuumVersion": "1.0-SNAPSHOT"
   },
