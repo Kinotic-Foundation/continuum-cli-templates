@@ -1,10 +1,10 @@
 {
   "inherits": "../microserviceCommon",
   "globals": {
-    "groovyVersion": "3.0.6",
-    "springBootVersion": "2.6.6",
-    "springDependencyManagementVersion": "1.0.11.RELEASE",
-    "continuumVersion": "1.0-SNAPSHOT"
+    "groovyVersion": "3.0.9",
+    "springBootVersion": "2.7.4",
+    "springDependencyManagementVersion": "1.0.14.RELEASE",
+    "continuumVersion": "1.0.0"
   },
   "propertySchema":{
     "groupId": {
