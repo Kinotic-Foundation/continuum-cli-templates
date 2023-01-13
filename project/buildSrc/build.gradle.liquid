@@ -10,10 +10,24 @@ repositories {
     mavenCentral()
 }
 
+/**
+ * Resolve properties in gradle.properties
+ */
+def properties = new Properties()
+rootDir.toPath()
+        .resolveSibling(GRADLE_PROPERTIES)
+        .toFile()
+        .withInputStream {
+            properties.load(it)
+        }
+properties.each { key, val -> project.ext."$key" = val }
 
 dependencies {
-    implementation 'org.springframework.boot:org.springframework.boot.gradle.plugin:{{springBootVersion}}'
+    implementation "org.springframework.boot:org.springframework.boot.gradle.plugin:${springBootVersion}"
 
     // see https://docs.spring.io/dependency-management-plugin/docs/current-SNAPSHOT/reference/html5/
-    implementation "io.spring.gradle:dependency-management-plugin:{{springDependencyManagementVersion}}"
+    implementation "io.spring.gradle:dependency-management-plugin:${springDependencyManagementVersion}"
+
+    // lombok
+    implementation("io.freefair.gradle:lombok-plugin:${lombokPluginVersion}")
 }

@@ -1,9 +1,10 @@
 {
   "globals": {
-    "groovyVersion": "3.0.9",
+    "continuumVersion": "1.0.1",
+    "groovyVersion": "3.0.10",
+    "lombokPluginVersion": "6.6.1å",
     "springBootVersion": "2.7.4",
-    "springDependencyManagementVersion": "1.0.14.RELEASE",
-    "continuumVersion": "1.0.0"
+    "springDependencyManagementVersion": "1.0.15.RELEASE"
   },
   "propertySchema":{
     "projectName": {
