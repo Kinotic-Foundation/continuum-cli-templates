@@ -1,0 +1,18 @@
+{
+  "inherits": "../microserviceCommon",
+  "propertySchema":{
+    "groupId": {
+      "type": "string",
+      "description": "Maven Group Id"
+    },
+    "artifactId": {
+      "type": "string",
+      "description": "Maven Artifact Id"
+    },
+    "basePackage": {
+      "type": "string",
+      "description": "Base java package for application",
+      "default": "{{groupId | append: '.' | append: artifactId | encodePackage}}"
+    }
+  }
+}
