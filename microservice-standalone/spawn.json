@@ -11,6 +11,11 @@
       "type": "string",
       "description": "Maven Group Id"
     },
+    "name": {
+      "type": "string",
+      "description": "Application Name",
+      "default": "{{artifactId | camelCase | upperFirst}}"
+    },
     "javaVersion": {
       "type": "string",
       "enum": ["8", "11", "17"],
