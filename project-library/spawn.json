@@ -1,5 +1,4 @@
 {
-  "inherits": "../microserviceCommon",
   "propertySchema":{
     "groupId": {
       "type": "string",
