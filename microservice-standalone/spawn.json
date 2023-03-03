@@ -2,9 +2,9 @@
   "inherits": "../microservice-common",
   "globals": {
     "groovyVersion": "3.0.9",
-    "springBootVersion": "2.7.4",
-    "springDependencyManagementVersion": "1.0.14.RELEASE",
-    "continuumVersion": "1.1.0"
+    "springBootVersion": "2.7.9",
+    "springDependencyManagementVersion": "1.1.0",
+    "continuumVersion": "1.2.0"
   },
   "propertySchema":{
     "groupId": {
@@ -18,8 +18,8 @@
     },
     "javaVersion": {
       "type": "string",
-      "enum": ["8", "11", "17"],
-      "default": "17",
+      "enum": ["11"],
+      "default": "11",
       "description": "Java source compatibility version"
     }
   }

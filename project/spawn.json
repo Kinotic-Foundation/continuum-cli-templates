@@ -1,10 +1,10 @@
 {
   "globals": {
-    "continuumVersion": "1.1.0",
+    "continuumVersion": "1.2.0",
     "groovyVersion": "3.0.10",
     "lombokPluginVersion": "6.6.1",
-    "springBootVersion": "2.7.4",
-    "springDependencyManagementVersion": "1.0.15.RELEASE"
+    "springBootVersion": "2.7.9",
+    "springDependencyManagementVersion": "1.1.0"
   },
   "propertySchema":{
     "projectName": {
@@ -17,8 +17,8 @@
     },
     "javaVersion": {
       "type": "string",
-      "enum": ["8", "11", "17"],
-      "default": "17",
+      "enum": ["11"],
+      "default": "11",
       "description": "Java source compatibility version"
     }
   }
